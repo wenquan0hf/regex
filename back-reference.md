@@ -10,9 +10,58 @@
 
 使用小括号的时候，还有很多特定用途的语法。下面列出了最常用的一些：
 
-表 4.常用分组语法
+<table cellspacing="0">
+        <caption>表4.常用分组语法</caption>
+        <tbody>
+            <tr>
+                <th scope="col">分类</th>
+                <th scope="col">代码/语法</th>
 
-![](images/exp.png)
+                <th scope="col">说明</th>
+            </tr>
+            <tr>
+                <th rowspan="3">捕获</th>
+                <td><span class="code">(exp)</span></td>
+                <td><span class="desc">匹配exp,并捕获文本到自动命名的组里</span></td>
+            </tr>
+
+            <tr>
+                <td><span class="code">(?&lt;name&gt;exp)</span></td>
+                <td><span class="desc">匹配exp,并捕获文本到名称为name的组里，也可以写成(?'name'exp)</span></td>
+            </tr>
+            <tr>
+                <td><span class="code">(?:exp)</span></td>
+
+                <td><span class="desc">匹配exp,不捕获匹配的文本，也不给此分组分配组号</span></td>
+            </tr>
+            <tr>
+                <th rowspan="4">零宽断言</th>
+                <td><span class="code">(?=exp)</span></td>
+                <td><span class="desc">匹配exp前面的位置</span></td>
+            </tr>
+
+            <tr>
+                <td><span class="code">(?&lt;=exp)</span></td>
+                <td><span class="desc">匹配exp后面的位置</span></td>
+            </tr>
+            <tr>
+                <td><span class="code">(?!exp)</span></td>
+                <td><span class="desc">匹配后面跟的不是exp的位置</span></td>
+
+            </tr>
+            <tr>
+                <td><span class="code">(?&lt;!exp)</span></td>
+                <td><span class="desc">匹配前面不是exp的位置</span></td>
+            </tr>
+            <tr>
+                <th rowspan="1">注释</th>
+
+                <td><span class="code">(?#comment)</span></td>
+                <td><span class="desc">这种类型的分组不对正则表达式的处理产生任何影响，用于提供注释让人阅读</span></td>
+            </tr>
+        </tbody>
+    </table>
+
 
 我们已经讨论了前两种语法。第三个(?:exp)不会改变正则表达式的处理方式，只是这样的组匹配的内容不会像前两种那样被捕获到某个组里面，也不会拥有组号。“我为什么会想要这样做？”——好问题，你觉得为什么呢？
 
