@@ -16,7 +16,7 @@
 
 <td>网址（URL）</td>
 
-<td><span class="regex">[a-zA-z]+://[^\s]*</span></td>
+<td><span >[a-zA-z]+://[^\s]*</span></td>
 
 </tr>
 
@@ -24,7 +24,7 @@
 
 <td>IP地址(IP Address)</td>
 
-<td><span class="regex">((2[0-4]\d|25[0-5]|[01]?\d\d?)\.){3}(2[0-4]\d|25[0-5]|[01]?\d\d?)</span></td>
+<td><span >((2[0-4]\d|25[0-5]|[01]?\d\d?)\.){3}(2[0-4]\d|25[0-5]|[01]?\d\d?)</span></td>
 
 </tr>
 
@@ -32,7 +32,7 @@
 
 <td>电子邮件(Email)</td>
 
-<td><span class="regex">\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*</span></td>
+<td><span >\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*</span></td>
 
 </tr>
 
@@ -40,7 +40,7 @@
 
 <td>QQ号码</td>
 
-<td><span class="regex">[1-9]\d{4,}</span></td>
+<td><span>[1-9]\d{4,}</span></td>
 
 </tr>
 
@@ -48,7 +48,7 @@
 
 <td>HTML标记(包含内容或自闭合)</td>
 
-<td><span class="regex"><(.*)(.*)>.*<\/\1>|<(.*) \/></span></td>
+<td><span ><(.*)(.*)>.*<\/\1>|<(.*) \/></span></td>
 
 </tr>
 
@@ -56,7 +56,7 @@
 
 <td>密码(由数字/大写字母/小写字母/标点符号组成，四种都必有，8位以上)</td>
 
-<td><span class="regex">(?=^.{8,}$)(?=.*\d)(?=.*\W+)(?=.*[A-Z])(?=.*[a-z])(?!.*\n).*$</span></td>
+<td><span >(?=^.{8,}$)(?=.*\d)(?=.*\W+)(?=.*[A-Z])(?=.*[a-z])(?!.*\n).*$</span></td>
 
 </tr>
 
@@ -64,7 +64,7 @@
 
 <td>日期(年-月-日)</td>
 
-<td><span class="regex">(\d{4}|\d{2})-((1[0-2])|(0?[1-9]))-(([12][0-9])|(3[01])|(0?[1-9]))</span></td>
+<td><span >(\d{4}|\d{2})-((1[0-2])|(0?[1-9]))-(([12][0-9])|(3[01])|(0?[1-9]))</span></td>
 
 </tr>
 
@@ -72,7 +72,7 @@
 
 <td>日期(月/日/年)</td>
 
-<td><span class="regex">((1[0-2])|(0?[1-9]))/(([12][0-9])|(3[01])|(0?[1-9]))/(\d{4}|\d{2})</span></td>
+<td><span >((1[0-2])|(0?[1-9]))/(([12][0-9])|(3[01])|(0?[1-9]))/(\d{4}|\d{2})</span></td>
 
 </tr>
 
@@ -80,7 +80,7 @@
 
 <td>时间(小时:分钟, 24小时制)</td>
 
-<td><span class="regex">((1|0?)[0-9]|2[0-3]):([0-5][0-9])</span></td>
+<td><span >((1|0?)[0-9]|2[0-3]):([0-5][0-9])</span></td>
 
 </tr>
 
@@ -88,7 +88,7 @@
 
 <td>汉字(字符)</td>
 
-<td><span class="regex">[\u4e00-\u9fa5]</span></td>
+<td><span >[\u4e00-\u9fa5]</span></td>
 
 </tr>
 
@@ -96,7 +96,7 @@
 
 <td>中文及全角标点符号(字符)</td>
 
-<td><span class="regex">[\u3000-\u301e\ufe10-\ufe19\ufe30-\ufe44\ufe50-\ufe6b\uff01-\uffee]</span></td>
+<td><span >[\u3000-\u301e\ufe10-\ufe19\ufe30-\ufe44\ufe50-\ufe6b\uff01-\uffee]</span></td>
 
 </tr>
 
@@ -104,7 +104,7 @@
 
 <td>中国大陆固定电话号码</td>
 
-<td><span class="regex">(\d{4}-|\d{3}-)?(\d{8}|\d{7})</span></td>
+<td><span >(\d{4}-|\d{3}-)?(\d{8}|\d{7})</span></td>
 
 </tr>
 
@@ -112,7 +112,7 @@
 
 <td>中国大陆手机号码</td>
 
-<td><span class="regex">1\d{10}</span></td>
+<td><span >1\d{10}</span></td>
 
 </tr>
 
@@ -120,7 +120,7 @@
 
 <td>中国大陆邮政编码</td>
 
-<td><span class="regex">[1-9]\d{5}</span></td>
+<td><span>[1-9]\d{5}</span></td>
 
 </tr>
 
@@ -128,7 +128,7 @@
 
 <td>中国大陆身份证号(15位或18位)</td>
 
-<td><span class="regex">\d{15}(\d\d[0-9xX])?</span></td>
+<td><span>\d{15}(\d\d[0-9xX])?</span></td>
 
 </tr>
 
@@ -136,7 +136,7 @@
 
 <td>非负整数(正整数或零)</td>
 
-<td><span class="regex">\d+</span></td>
+<td><span >\d+</span></td>
 
 </tr>
 
@@ -144,7 +144,7 @@
 
 <td>正整数</td>
 
-<td><span class="regex">[0-9]*[1-9][0-9]*</span></td>
+<td><span >[0-9]*[1-9][0-9]*</span></td>
 
 </tr>
 
@@ -152,7 +152,7 @@
 
 <td>负整数</td>
 
-<td><span class="regex">-[0-9]*[1-9][0-9]*</span></td>
+<td><span >-[0-9]*[1-9][0-9]*</span></td>
 
 </tr>
 
@@ -160,7 +160,7 @@
 
 <td>整数</td>
 
-<td><span class="regex">-?\d+</span></td>
+<td><span >-?\d+</span></td>
 
 </tr>
 
@@ -168,7 +168,7 @@
 
 <td>小数</td>
 
-<td><span class="regex">(-?\d+)(\.\d+)?</span></td>
+<td><span >(-?\d+)(\.\d+)?</span></td>
 
 </tr>
 
@@ -176,7 +176,7 @@
 
 <td>不包含abc的单词</td>
 
-<td><span class="regex">\b((?!abc)\w)+\b</span></td>
+<td><span>\b((?!abc)\w)+\b</span></td>
 
 </tr>
 
